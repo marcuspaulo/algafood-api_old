@@ -313,6 +313,12 @@ Para iniciar o MySql, basta rodar o comando abaixo (O Docker precisa estar insta
 docker run --name algafood-mysql -it -v ~/Developer/Database_Docker/MySQL/algafood:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3306:3306 -d mysql
 ```
 
+### Dica como customizar os parâmetros de paginação
+```
+Para fazer isso é simples, no seu application.properties faça:
+spring.data.web.pageable.size-parameter: pageSize
+```
+
 <!-- CONTRIBUTING -->
 
 ## Contribuição
